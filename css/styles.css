@@ -7,6 +7,11 @@ and open the template in the editor.
     Created on : 19-Dec-2015, 12:53:56
     Author     : mfallas
 */
+
+p{
+    text-align: justify;
+}
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -27,7 +32,7 @@ and open the template in the editor.
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background: #222;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -80,6 +85,26 @@ and open the template in the editor.
     text-decoration: none;
     text-align: center;
     /*color: #999999;*/
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
 }
 
 @media(min-width:768px) {
