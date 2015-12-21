@@ -4,8 +4,8 @@
     <head>
 
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
         <meta name="description" content="">
         <meta name="author" content="">
 
@@ -419,6 +419,8 @@
         <script src="js/bootstrap.min.js"></script>
         <!-- Menu Toggle Script -->
         <script>
+            var viewport = $("<meta name='viewport' content='width=device-width, initial-scale=1'>");
+            $("head").prepend(viewport);
             $("#menu-toggle").click(function (e) {
                 e.preventDefault();
                 $("#wrapper").toggleClass("toggled");
